@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GekaNet - Internet Berkualitas Tinggi</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: #fff; background-color: #121212; } /* Background Utama Hitam */
+        
+        /* Navigation (Hitam & Orange) */
+        nav { background: #1a1a1a; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.5); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: bold; color: #ff6600; } /* Orange */
+        .logo span { color: #fff; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { text-decoration: none; color: #bbb; font-weight: 600; transition: 0.3s; }
+        nav ul li a:hover { color: #ff6600; }
+
+        /* Hero Section (Orange & Hitam) */
+        .hero { background: linear-gradient(135deg, #ff6600 0%, #121212 100%); color: white; padding: 120px 10%; text-align: center; }
+        .hero h1 { font-size: 42px; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
+        .hero p { font-size: 18px; margin-bottom: 30px; opacity: 0.9; }
+        .btn { display: inline-block; background: #ff6600; color: #fff; padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 25px; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
+        .btn:hover { background: #fff; color: #ff6600; }
+
+        /* Pricing Section */
+        .pricing { padding: 80px 10%; text-align: center; background: #1a1a1a; }
+        .pricing h2 { font-size: 32px; margin-bottom: 40px; color: #ff6600; }
+        .grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        
+        /* Card Paket (Hitam dengan Border Orange) */
+        .card { background: #262626; padding: 40px 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.3); width: 280px; text-align: center; border: 1px solid #333; border-top: 5px solid #ff6600; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); border-color: #ff6600; }
+        .card h3 { font-size: 24px; margin-bottom: 15px; color: #fff; }
+        .card .price { font-size: 28px; font-weight: bold; color: #ff6600; margin-bottom: 20px; }
+        .card ul { list-style: none; margin-bottom: 30px; text-align: left; color: #ccc; font-size: 14px; }
+        .card ul li { margin-bottom: 10px; }
+        .card .btn-pack { display: block; background: #ff6600; color: #fff; padding: 10px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .card .btn-pack:hover { background: #cc5200; }
+
+        /* Form Section */
+        .form-section { padding: 60px 10%; background: #121212; }
+        .form-section h2 { text-align: center; font-size: 32px; margin-bottom: 40px; color: #ff6600; }
+        .form-container { display: flex; gap: 50px; flex-wrap: wrap; justify-content: center; }
+        .form-box { flex: 1; min-width: 300px; max-width: 500px; }
+        
+        /* Input Form Gekanet */
+        label { display: block; font-weight: bold; margin-bottom: 5px; color: #ccc; }
+        input, select, textarea { width: 100%; padding: 12px; border: 1px solid #444; background: #222; color: #fff; border-radius: 5px; font-size: 16px; margin-bottom: 15px; }
+        input:focus, select:focus, textarea:focus { border-color: #ff6600; outline: none; }
+        .btn-submit { width: 100%; background: #ff6600; color: #fff; border: none; padding: 15px; font-size: 16px; font-weight: bold; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .btn-submit:hover { background: #cc5200; }
+
+        /* Footer */
+        footer { background: #0a0a0a; color: #fff; padding: 40px 10%; text-align: center; font-size: 14px; border-top: 1px solid #222; }
+        footer p { opacity: 0.7; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">GEKA<span>NET</span></div>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Paket WiFi</a></li>
+            <li><a href="#pendaftaran">Daftar</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Internet Cepat Tanpa Drama</h1>
+        <p>Nikmati koneksi internet super stabil, 100% Fiber Optic, tanpa kuota batas (FUP) di Gunungkidul.</p>
+        <a href="#pendaftaran" class="btn">Daftar Pasang Baru</a>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <h2>Pilihan Paket Internet Rumah</h2>
+        <div class="grid">
+            <!-- Paket 10 Mbps -->
+            <div class="card">
+                <h3>Up To 10 Mbps</h3>
+                <div class="price">Rp 135.000<span style="font-size:14px; font-weight:normal; color:#aaa;">/bln</span></div>
+                <ul>
+                    <li>✔ 100% Fiber Optic</li>
+                    <li>✔ Unlimited Tanpa FUP</li>
+                    <li>✔ Gratis Biaya Pasang</li>
+                    <li>✔ Peralatan Dipinjamkan</li>
+                </ul>
+                <a href="https://wa.me" class="btn-pack" target="_blank">Pilih Paket</a>
+            </div>
+            <!-- Paket 15 Mbps -->
+            <div class="card">
+                <h3>Up To 15 Mbps</h3>
+                <div class="price">Rp 165.000<span style="font-size:14px; font-weight:normal; color:#aaa;">/bln</span></div>
+                <ul>
+                    <li>✔ Lebih Cepat & Stabil</li>
+                    <li>✔ Unlimited Tanpa FUP</li>
+                    <li>✔ Gratis Biaya Pasang</li>
+                    <li>✔ Peralatan Dipinjamkan</li>
+                </ul>
+                <a href="https://wa.me" class="btn-pack" target="_blank">Pilih Paket</a>
+            </div>
+            <!-- Paket 20 Mbps -->
+            <div class="card">
+                <h3>Up To 20 Mbps</h3>
+                <div class="price">Rp 195.000<span style="font-size:14px; font-weight:normal; color:#aaa;">/bln</span></div>
+                <ul>
+                    <li>✔ Cocok Keluarga Besar</li>
+                    <li>✔ Unlimited Tanpa FUP</li>
+                    <li>✔ Gratis Biaya Pasang</li>
+                    <li>✔ Peralatan Dipinjamkan</li>
+                </ul>
+                <a href="https://wa.me" class="btn-pack" target="_blank">Pilih Paket</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form & Maps Section -->
+    <section class="form-section" id="pendaftaran">
+        <h2>Pendaftaran Pasang Baru</h2>
+        <div class="form-container">
+            
+            <!-- Kiri: Form -->
+            <div class="form-box">
+                <form id="whatsappForm">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="nama" required>
+
+                    <label>Nomor WhatsApp</label>
+                    <input type="tel" id="whatsapp" required placeholder="Contoh: 08123456789">
+
+                    <label>Pilihan Paket</label>
+                    <select id="paket">
+                        <option value="10 Mbps">Up To 10 Mbps - Rp 135.000 / bln</option>
+                        <option value="15 Mbps">Up To 15 Mbps - Rp 165.000 / bln</option>
+                        <option value="20 Mbps">Up To 20 Mbps - Rp 195.000 / bln</option>
+                    </select>
+
+                    <label>Alamat Lengkap Pemasangan</label>
+                    <textarea id="alamat" rows="4" required placeholder="Sebutkan dusun, RT/RW, kelurahan, kecamatan"></textarea>
+
+                    <button type="submit" class="btn-submit">Kirim via WhatsApp</button>
+                </form>
+            </div>
+
+            <!-- Kanan: Peta -->
+            <div class="form-box" style="display: flex; flex-direction: column; gap: 15px;">
+                <h3 style="color: #ff6600; font-size: 20px;">Kantor Operasional</h3>
+                <p style="color: #ccc; font-size: 15px; line-height: 1.6;">
+                    Gekanet melayani area Gunungkidul dan sekitarnya [GekaNet]. Silakan isi data di samping untuk cek ketersediaan jaringan di lokasi Anda.
+                </p>
+                <div style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5); height: 260px; border: 1px solid #333;">
+                    <iframe src="https://google.com" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>PT. Geka Solusi Utama (Gekanet)</strong></p>
+        <p>Kantor Pusat: Jl. Jogja - Wonosari KM 18, Patuk, Gunungkidul, D.I.Y.</p>
+        <p>&copy; 2026 Gekanet. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script Form -->
+    <script>
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const paket = document.getElementById('paket').value;
+            const alamat = document.getElementById('alamat').value;
+            
+            const nomorAdmin = "6285212114411"; 
